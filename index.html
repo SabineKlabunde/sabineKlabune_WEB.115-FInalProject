@@ -8,5 +8,34 @@
 
     <body>
         <h1>Interactive Task Manager</h1>
+
+        <!-- Divider to contain form for task creation. -->
+        <div id="taskForm">
+            <!-- Form for task creation. -->
+            <form id="newTaskForm">
+                <fieldset>
+                    <!-- Defines a legend to identify the form field.-->
+                    <legend>Create New Task</legend>
+                    <!-- Input field for new task name. -->
+                    <input type="text" id="taskName" name="taskName" placeholder="Enter Task Name ...">
+                    <!-- Selection field for new task priority. -->
+                    <select id="taskPriority" name="taskPriority">
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    <!-- Checkbox for new task importance. -->
+                    <input type="checkbox" id="taskImportance" name="taskImportance" value="Important">
+                    <label for="taskImportance">Important</label>
+                    <!-- Button for task submission. -->
+                    <input type="submit" id="submitButton" name="submitButton" value="Add Task">
+                </fieldset>
+            </form>
+        </div>
+
+        <!-- Divider to display tasks. -->
+        <div id="taskmanager">
+            <p id="noTasks">Hmm.. It looks like there aren't any tasks at the moment. Try creating a task to display here!</p>
+        </div>
     </body>
 </html>

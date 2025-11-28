@@ -7,14 +7,31 @@ body {
 body > h1 {
     margin: 0;
     background-color: teal;
-    padding-left: 15pt;
-    padding-right: 15pt;
-    padding-top:15pt;
-    padding-bottom: 15pt;
 }
 
 h1 {
     font-size: 40px;
+    padding: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
+}
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    border: 2px solid rgba(69, 69, 69, 0.3);
+    margin: 15px;
+}
+
+input, select, label {
+    margin: 0px 15px 0px 15px;
+    font-size: 18px;
+}
+
+#taskmanager {
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid rgba(69, 69, 69, 0.3);
+    font-size: 18px;
 }
